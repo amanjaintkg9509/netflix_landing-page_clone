@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +13,6 @@
         }
     </style>
 </head>
-
 <body>
     <div class="main-container">
         <!--show top header-->
@@ -27,45 +25,36 @@
                 </g>
             </svg>
 
+            <div class="side-button">
+                <select data-uia="language-picker" class="ui-select medium" id="undefined-select" tabindex="0" placeholder="lang-switcher"><option selected="" value="/in/" data-language="en" data-country="IN">English</option><option value="/in-hi/" data-language="hi" data-country="IN">हिन्दी</option></select>
+
+                <a href="index.html" class="authLinks redButton" data-uia="header-login-link">Sign In</a>
+            </div> 
+
         </header>
-
-        <!--show main section part-->
-        <section>
-            <div class="main-div container ">
-                <div>
-                    <h2>Sign In</h2>
-
-                    <form id="signup">
-                        <div>
-                            <input type="text" name="username" id="uname" placeholder="Email or Phone Number">\
+        <div class="email-dev">
+            <div class="our-story-card-text">
+                <h1 id="" class="our-story-card-title" data-uia="hero-title">Unlimited movies, TV shows and more.</h1>
+                <h2 id="" class="our-story-card-subtitle" data-uia="our-story-card-subtitle">Watch anywhere. Cancel anytime.</h2>
+                <form class="cta-form email-form" data-uia="email-form" method="GET">
+                    <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <div class="email-form-lockup">
+                        <div data-uia="field-email+container" class="nfInput nfInputResponsive">
+                            <div class="nfInputPlacement">
+                                <input type="email" name="email" class="nfTextField" id="id_email_hero_fuji" value=""  autocomplete="email" maxlength="50" minlength="5" placeholder="Email address">
+                                <button class="btn btn-red nmhp-cta nmhp-cta-extra-large btn-none btn-custom" type="submit" autocomplete="off" tabindex="0" role="link" data-uia="our-story-cta-hero_fuji">
+                                    <span id="" class="cta-btn-txt" data-uia="">Get Started ></span>
+                                </button>
+                            </div>
                         </div>
-                        <div>
-                            <input type="password" name="password" id="pass" placeholder="Password">
-                        </div>
-                        <div>
-                            <button class="submit-btn">Sign In</button>
-                        </div>
-
-                        <span>
-                            <input type="checkbox" name="remember" class="rem-chk-btn" checked><span
-                                class="rem-chk-txt"> Remember me </span>
-                        </span>
-                        <span class="help">Need Help?</span>
-                    </form>
-                </div>
-                <div class="social-media-div">
-                    <img src="./assets/images/fbb-icon.png" height="20" width="20"/> <span class="fb-txt">Login with Facebook</span>
-                    <div class="new-signup">
-                        New to Netflix? <a href="./signup.html"><span style="color: #fff;">Sign up now.</span></a>
                     </div>
-                    <div class="recaptcha-dev">
-                        This page is protected by Google reCAPTCHA to ensure you're not a bot.<span style="color: #0071EB;">Learn more.</span>
-                    </div>
-                </div>
+                </form>
+                <h3 id="" class="our-story-card-disclaimer" data-uia="our-story-card-disclaimer"></h3>
             </div>
-        </section>
+        </div>
     </div>
-
+    
+    
 </body>
 
 </html>
